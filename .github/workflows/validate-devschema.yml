@@ -8,3 +8,5 @@ on:
 jobs:
   validate-devschema:
     uses: jdevto/actions/.github/workflows/validate-devschema.yml@main
+    with:
+      verbose: true
