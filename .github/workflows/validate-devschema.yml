@@ -1,0 +1,10 @@
+name: validate-devschema
+on:
+  pull_request: {}
+  push:
+    branches:
+      - main
+
+jobs:
+  markdown-lint:
+    uses: jdevto/actions/.github/workflows/validate-devschema.yml@main
