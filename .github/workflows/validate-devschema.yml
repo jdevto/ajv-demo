@@ -1,9 +1,13 @@
 name: validate-devschema
 on:
-  pull_request: {}
+  pull_request:
+    paths:
+      - '**/devcontainer.json'
   push:
     branches:
       - main
+    paths:
+      - '**/devcontainer.json'
 
 jobs:
   validate-devschema:
